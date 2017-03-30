@@ -7,7 +7,7 @@ STS står for Security Token Service, og er en sentralisert formidler av identit
 Hensikten med en STS er å outsource sikkerhetsfunksjonalitet til en sentralisert tjeneste, slik at man kan unngå duplisering av funksjonaliteten på tvers av tjenestegrensesnitt, web-, skrivebords- og mobilapplikasjoner.
 FIA STS behersker protokoller som [OpenID Connect 1.0](http://openid.net/specs/openid-connect-core-1_0.html) og [OAuth 2.0](https://tools.ietf.org/html/rfc6749), i tillegg til en eldre protokoll som [WS-Federation](http://docs.oasis-open.org/wsfed/federation/v1.2/ws-federation.html).
 
-![sts-modell](https://github.com/fia-kare/fia-kare.github.com/blob/master/images/sts_model.png)
+![sts-modell](https://raw.githubusercontent.com/fia-kare/fia-kare.github.com/master/images/sts_model.png)
 
 Modellen viser en forenklet flyt for autentisering og API-tilgang, etter hvilket mønster FIA STS-en er designet.
 FIAs STS er en RP-STS (Relying Party) hvilket vil si at tjenesten ikke autentiserer klientene selv, men baserer seg på tokens basert på ovennevnte sikkerhetsprotokoller, utstedt fra IP-STS-er (Identity Provider) som er konfigurert som identitetstilbydere i FIA STS.
