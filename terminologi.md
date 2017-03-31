@@ -1,5 +1,7 @@
 # Terminologi
 
+Her gis en kort forklaring på termene som brukes i forbindelse med FIA STS.
+
 ## Bruker
 
 En bruker er et menneske som bruker en registrert klient for å få tilgang til ressurser.
