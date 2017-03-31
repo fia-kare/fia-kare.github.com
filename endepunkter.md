@@ -26,4 +26,4 @@ Tilgang til endepunktet forutsetter autentisering ved hjelp av en API-ressurshem
 
 ## Revocation endpoint
 
-Revocation-endpointet har sin egen [spesifikasjon](https://tools.ietf.org/html/rfc7009), og brukes til å tilbakekalle reference tokens og refresh tokens. Access tokens som ikke er reference tokens, men som da altså er self-contained access tokens, kan ikke tilbakekalles.
+Revocation-endepunktet har sin egen [spesifikasjon](https://tools.ietf.org/html/rfc7009), og brukes til å tilbakekalle reference tokens og refresh tokens. Access tokens som ikke er reference tokens, men som da altså er self-contained access tokens, kan ikke tilbakekalles.
