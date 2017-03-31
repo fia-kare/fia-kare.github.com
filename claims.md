@@ -1,3 +1,5 @@
+## Claims
+
 | Navn | Kortnavn | Eksempelverdi | Beskrivelse |
 | --- | --- | --- | --- |
 | http://nhn.no/identity/claims/nnid | identity/nnin | 04048900181 | Norwegian national identification number - fødselsnummer |
