@@ -1,4 +1,4 @@
-## Claims
+# Claims
 
 | Navn | Kortnavn | Eksempelverdi | Beskrivelse |
 | --- | --- | --- | --- |
@@ -11,7 +11,7 @@
 | http://nhn.no/hpr/claims/profession | hpr/profession | AU | Verdier iht. NHNs kodeverk |
 | http://nhn.no/hpr/claims/authorization | hpr/authorization | | JSON-struktur iht. NHNs kodeverk |
 
-### authorization
+## authorization
 
 ```json
 {
