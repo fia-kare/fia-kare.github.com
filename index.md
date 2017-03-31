@@ -18,6 +18,8 @@ FIAs STS er en RP-STS (Relying Party) hvilket vil si at tjenesten ikke autentise
 
 - [Klientregistrering](dcr.md)
 
+- [Endepunkter](endepunkter.md)
+
 - [Implementerte spesifikasjoner](implementerte_spesifikasjoner.md)
 
 - [Klientbiblioteker](http://openid.net/developers/libraries/) - Ekstern lenke til openid.net
