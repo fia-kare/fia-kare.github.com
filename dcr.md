@@ -1,4 +1,4 @@
-# Dynamic Client Registration
+# Klientregistrering
 FIA tilbyr et REST API for administrasjon av klienter og ressurser.
 
 ## Identitetsressurs
