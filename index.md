@@ -13,3 +13,5 @@ Modellen viser en forenklet flyt for autentisering og API-tilgang, etter hvilket
 FIAs STS er en RP-STS (Relying Party) hvilket vil si at tjenesten ikke autentiserer klientene selv, men baserer seg på tokens basert på ovennevnte sikkerhetsprotokoller, utstedt fra IP-STS-er (Identity Provider) som er konfigurert som identitetstilbydere i FIA STS.
 
 [Claims](claims.md)
+
+[Klientregistrering](dcr.md)
