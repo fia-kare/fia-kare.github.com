@@ -3,7 +3,7 @@ FIA tilbyr et REST API for administrasjon av klienter og ressurser.
 
 ## Identitetsressurs
 
-En identitetsressurs er et stykke data som tilhører en bruker, som for eksempel navn, e-postadresse og fødselsnummer. Det er et én-til- én forhold mellom identitetsressurser og tilhørende scope. En identitetsressurs kan imidlertid være tilknyttet flere claims, som representeres i utstedte identity tokens, eller hentes via UserProfile-endepunktet. Det finnes en mengde standardressurser i IdentityServer, men man kan også [konfigurere spesialtilpassede identitetsressurser](http://docs.identityserver.io/en/release/configuration/resources.html).
+En identitetsressurs er et stykke data som tilhører en bruker, som for eksempel navn, e-postadresse og fødselsnummer. Det er et én-til- én forhold mellom identitetsressurser og tilhørende scope. En identitetsressurs kan imidlertid være tilknyttet flere claims, som representeres i utstedte identity tokens, eller hentes via UserProfile-endepunktet.
 
 ### Input
 
@@ -27,7 +27,7 @@ En identitetsressurs er et stykke data som tilhører en bruker, som for eksempel
 
 ## API-ressurs
 
-En API-ressurs er et tjenestegrensesnitt som STS-en beskytter. I motsetning til identitetsressurser kan en API-ressurs være tilknyttet flere [scopes](http://docs.identityserver.io/en/release/configuration/resources.html), som igjen kan være konfigurert med [scope secrets](http://docs.identityserver.io/en/release/topics/secrets.html), som videre er en forutsetning for å kunne bruke utstedt reference token mot Introspection-endepunktet.
+En API-ressurs er et tjenestegrensesnitt som STS-en beskytter. I motsetning til identitetsressurser kan en API-ressurs være tilknyttet flere scopes. API-ressursen kan være konfigurert med en API secret, som videre er en forutsetning for å kunne bruke utstedt reference token mot Introspection-endepunktet.
 
 API-ressurser kan være tilknyttet flere claims, som representeres i utstedte access tokens.
 
