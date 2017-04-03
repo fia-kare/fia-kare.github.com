@@ -1,30 +1,6 @@
 # Klientregistrering
 FIA tilbyr et REST API for administrasjon av klienter og ressurser.
 
-## Identitetsressurs
-
-En identitetsressurs er et stykke data som tilhører en bruker, som for eksempel navn, e-postadresse og fødselsnummer. Det er et én-til- én forhold mellom identitetsressurser og tilhørende scope. En identitetsressurs kan imidlertid være tilknyttet flere claims, som representeres i utstedte identity tokens, eller hentes via UserProfile-endepunktet.
-
-### Input
-
-| Parameter | Datatype | Påkrevd | Beskrivelse |
-| --- | --- | --- | --- |
-| identity_resource_id | string | Kun ved oppdatering |
-| name | string | Ja | Må være unikt |
-| display_name | string | Nei | For bruk i consent screen |
-| description | string | Nei | For bruk i consent screen |
-| claims | string[] | Nei | For identity_token |
-
-### Output
-
-| Parameter | Datatype | Beskrivelse |
-| --- | --- | --- |
-| identity_resource_id | string | Generert id |
-| name | string | |
-| display_name | string | |
-| description | string | |
-| claims | string[] | |
-
 ## API-ressurs
 
 En API-ressurs er et tjenestegrensesnitt som STS-en beskytter. I motsetning til identitetsressurser kan en API-ressurs være tilknyttet flere scopes. API-ressursen kan være konfigurert med en API secret, som videre er en forutsetning for å kunne bruke utstedt reference token mot Introspection-endepunktet.
@@ -39,19 +15,8 @@ API-ressurser kan være tilknyttet flere claims, som representeres i utstedte ac
 | name | string | Ja | Må være unikt |
 | display_name | string | Nei | For bruk i consent screen |
 | description | string | Nei | For bruk i consent screen |
-| claims | string[] | Nei | For access_token |
-| scopes | scope[] | Nei | |
+| authorization_scopes | string[] | Nei | |
 | create_secret | boolean | Nei | For generering av API secret for bruk mot introspection endpoint |
-
-#### scope
-
-```json
-{
-  "name": "et_gitt_api",
-  "display_name": "API-et",
-  "description": "Et API for noe."
-}
-```
 
 ### Output
 
@@ -61,8 +26,7 @@ API-ressurser kan være tilknyttet flere claims, som representeres i utstedte ac
 | name | string | |
 | display_name | string | |
 | description | string | |
-| claims | string[] | |
-| scopes | scope[] | |
+| authorization_scopes | string[] | |
 | secret | string | Eventuelt generert API secret |
 
 ## Klient
@@ -99,7 +63,7 @@ En klient er en applikasjon som kan forespørre tokens fra STS-en. De mest sentr
 | require_client_secret | boolean | Nei | false | |
 | sliding_refresh_token_lifetime | int | Nei | 1 296 000 | |
 | client_claims | client_claim[] | Nei | | |
-| allowed_scopes | string[] | Nei | | Tillatte scopes - globale eller definert som Identity Resource eller under API Resources |
+| allowed_scopes | string[] | Nei | | Tillatte scopes - globale eller definert under API Resources |
 | create_secret | boolean | Nei | false | For generering av client_secret |
 
 #### client_claim
@@ -135,5 +99,5 @@ En klient er en applikasjon som kan forespørre tokens fra STS-en. De mest sentr
 | require_client_secret | boolean | |
 | sliding_refresh_token_lifetime | int | |
 | client_claims | client_claim[] | |
-| scopes | string[] | Nei | |
+| allowed_scopes | string[] | Nei | |
 | create_secret | boolean | |
