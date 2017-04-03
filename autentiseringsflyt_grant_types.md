@@ -25,11 +25,23 @@ Implicit flow er primært tiltenkt browserbaserte applikasjoner, det være seg e
 
 Ved implicit flow vil tokens bli sendt via browseren, altså frontkanalen. Av sikkerhetsmessige årsaker tillates ikke refresh tokens ved implicit flow.
 
+### Eksempel på flyt for en JavaScript/SPA-klient
+
+![SPA](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/master/images/SPA.svg)
+
 ## Authorization code
 
 I motsetning til ved implicit flow, overføres tokens ikke via frontkanalen (browseren) med authorization code flow. En autorisasjonskode overføres via frontkanalen inn til klienten, som videre kontakter STS-ens Token-endepunkt vedlagt autorisasjonskoden, og får et identity token, et access token og eventuelt et refresh token i retur. I tillegg kan (bør) klienten måtte autentisere seg mot STS-en med eksempelvis en delt hemmelighet, for å få lov til å bruke autorisasjonskoden til å hente ut informasjon. Dette for å hindre at autorisasjonskoden brukes av uvedkommende tredjepart.
 
 [Klientautentisering](http://openid.net/specs/openid-connect-core-1_0.html#ClientAuthentication) er beskrevet i spesifikasjonen for OpenID Connect Core 1.0.
+
+### Eksempel på flyt for en webapplikasjon med delt hemmelighet med FIA STS
+
+![Webapplikasjon](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/047a729b/images/Webapplikasjon.svg)
+
+### Eksempel på flyt for en desktop- eller mobilapplikasjon med dynamisk opprettet PKCE-hemmelighet overfor FIA STS
+
+![Desktopapplikasjon](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/047a729b/images/Desktopapplikasjon.svg)
 
 ## Hybrid
 
@@ -42,6 +54,10 @@ Hybrid flow kan gjerne brukes for serverside-applikasjoner og native desktop- el
 Client credentials er den enkleste granttypen, og brukes for server-til-server-kommunikasjon. Tokens forespørres alltid på vegne av en klient, ikke en bruker.
 
 En klient autentiserer seg mot Token-endepunktet ved hjelp av klientidentifikatoren sin, samt typisk en hemmelighet som er delt med STS-en.
+
+### Eksempel på flyt for en systemklient med delt hemmelighet eller klientsertifikat overfor FIA STS
+
+![Systemklient](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/047a729b/images/Systemklient.svg)
 
 ## Resource owner password
 
