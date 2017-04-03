@@ -44,7 +44,7 @@ En klient er en applikasjon som kan forespørre tokens fra STS-en. De mest sentr
 | --- | --- | --- | --- | --- |
 | client_id | string | Kun ved oppdatering | | OIDC-standard |
 | client_name | string | Ja | | OIDC-standard - Må være unikt |
-| redirect_uris | string | Nei | | OIDC-standard | Må være https |
+| redirect_uris | string | Nei | | OIDC-standard - Må være https |
 | grant_types | string[] | Ja | | OIDC-standard - authorization_code, client_credentials, hybrid, implicit |
 | absolute_refresh_token_lifetime | int | Nei | 2 592 000 | |
 | access_token_lifetime | int | Nei | 3600 | |
@@ -99,5 +99,5 @@ En klient er en applikasjon som kan forespørre tokens fra STS-en. De mest sentr
 | require_client_secret | boolean | |
 | sliding_refresh_token_lifetime | int | |
 | client_claims | client_claim[] | |
-| allowed_scopes | string[] | Nei | |
+| allowed_scopes | string[] | |
 | create_secret | boolean | |
