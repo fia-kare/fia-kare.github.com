@@ -31,7 +31,7 @@ Ved implicit flow vil tokens bli sendt via browseren, altså frontkanalen. Av si
 
 ## Authorization code
 
-I motsetning til ved implicit flow, overføres tokens ikke via frontkanalen (browseren) med authorization code flow. En autorisasjonskode overføres via frontkanalen inn til klienten, som videre kontakter STS-ens Token-endepunkt vedlagt autorisasjonskoden, og får et identity token, et access token og eventuelt et refresh token i retur. I tillegg kan (bør) klienten måtte autentisere seg mot STS-en med eksempelvis en delt hemmelighet, for å få lov til å bruke autorisasjonskoden til å hente ut informasjon. Dette for å hindre at autorisasjonskoden brukes av uvedkommende tredjepart.
+I motsetning til ved implicit flow, overføres tokens ikke via frontkanalen (browseren) med authorization code flow. En autorisasjonskode overføres via frontkanalen inn til klienten, som videre kontakter STS-ens Token-endepunkt vedlagt autorisasjonskoden, og får et identity token, et access token og eventuelt et refresh token i retur. I tillegg må klienten autentisere seg mot STS-en med eksempelvis en delt hemmelighet, for å få lov til å bruke autorisasjonskoden til å hente ut informasjon. Dette for å hindre at autorisasjonskoden brukes av uvedkommende tredjepart.
 
 [Klientautentisering](http://openid.net/specs/openid-connect-core-1_0.html#ClientAuthentication) er beskrevet i spesifikasjonen for OpenID Connect Core 1.0.
 
@@ -63,10 +63,10 @@ En klient autentiserer seg mot Token-endepunktet ved hjelp av klientidentifikato
 
 Ikke relevant for FIA STS siden løsningen ikke eier en brukerbase.
 
-## Refresh tokens
-
-Med refresh tokens oppnår man langvarig tilgang til et tjenestegrensesnitt, siden de tillater en klient å forespørre nye access tokens uten brukerinteraksjon. Det er mulig å nyttiggjøre refresh tokens i hybrid, authorization code eller resource owner password flows, gitt at man har forespurt scopet offline_access.
-
 ## Extension grants
 
 Extension grants muliggjør å utvide Token-endepunktet med nye (custom) grant types, noe som tillater skreddersøm av samhandlingen mellom klient og STS.
+
+## Refresh tokens
+
+Med refresh tokens oppnår man langvarig tilgang til et tjenestegrensesnitt, siden de tillater en klient å forespørre nye access tokens uten brukerinteraksjon. Det er mulig å nyttiggjøre refresh tokens i hybrid, authorization code eller resource owner password flows, gitt at man har forespurt scopet offline_access.
