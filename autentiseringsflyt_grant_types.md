@@ -37,7 +37,7 @@ I motsetning til ved implicit flow, overføres tokens ikke via frontkanalen (bro
 
 ### PKCE (Proof Key for Code Exchange)
 
-I tilfeller der klienten befinner seg i et miljø som gjør at den ikke kan holde på en delt statisk hemmelighet over tid, er PKCE  et alternativ. PKCE-protokollen er spesifisert [her](https://tools.ietf.org/html/rfc7636#section-4). I korte trekk oppretter klienten en dynamisk hemmelighet, som hashes og vedlegges, i forbindelse med forespørsel om en autorisasjonskode. FIA STS må på sin side internt assosiere den hashede hemmeligheten med autorisasjonskoden som utstedes. Når autorisasjonskoden senere brukes mot token-endepunktet hos FIA STS, må hemmeligheten, i klartekst, vedlegges autorisasjonskoden. FIA STS hasher klarteksthemmeligheten og sammenligner med den hashede hemmeligheten som er assosiert med autorisasjonskoden.
+I tilfeller der klienten befinner seg i et miljø som gjør at den ikke kan holde på en delt statisk hemmelighet over tid, er PKCE  et alternativ. PKCE-protokollen er spesifisert [her](https://tools.ietf.org/html/rfc7636#section-4). I korte trekk oppretter klienten en dynamisk hemmelighet, som hashes og vedlegges en forespørsel om en autorisasjonskode. FIA STS må på sin side internt assosiere den hashede hemmeligheten med autorisasjonskoden som utstedes. Når koden senere brukes mot token-endepunktet hos FIA STS, må hemmeligheten, i klartekst, vedlegges forespørselen. FIA STS hasher klarteksthemmeligheten og sammenligner med autorisasjonskodens assosierte hemmelighet.
 
 ![PKCE](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/146aa8b4/images/PKCE.svg)
 
@@ -61,9 +61,13 @@ Client credentials er den enkleste granttypen, og brukes for server-til-server-k
 
 En klient autentiserer seg mot Token-endepunktet ved hjelp av klientidentifikatoren sin, samt typisk en hemmelighet som er delt med STS-en.
 
-### Eksempel på flyt for en systemklient med delt hemmelighet eller klientsertifikat overfor FIA STS
+### Eksempel på flyt for en systemklient med delt hemmelighet overfor FIA STS
 
-![Systemklient](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/146aa8b4/images/Systemklient.svg)
+![Systemklient](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/ea539872/images/Systemklient.svg)
+
+### Eksempel på flyt for en systemklient med klientsertifikat overfor FIA STS
+
+![Systemklient_klientsertifikat](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/ea539872/images/Systemklient_klientsertifikat.svg)
 
 ## Resource owner password
 
