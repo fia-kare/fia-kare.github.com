@@ -59,7 +59,7 @@ Hybrid flow kan gjerne brukes for serverside-applikasjoner og native desktop- el
 
 Client credentials er den enkleste granttypen, og brukes for server-til-server-kommunikasjon. Tokens forespørres alltid på vegne av en klient, ikke en bruker.
 
-En klient autentiserer seg mot Token-endepunktet ved hjelp av klientidentifikatoren sin, samt typisk en hemmelighet som er delt med STS-en.
+En klient autentiserer seg mot Token-endepunktet ved hjelp av klientidentifikatoren sin, samt en delt hemmelighet eller klientsertifikat.
 
 ### Eksempel på flyt for en systemklient med delt hemmelighet overfor FIA STS
 
