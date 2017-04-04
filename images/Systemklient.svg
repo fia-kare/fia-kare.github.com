@@ -16,7 +16,7 @@
 		.st6 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
 		.st7 {fill:#53802e;font-family:Calibri;font-size:0.666664em}
 		.st8 {font-size:1em}
-		.st9 {marker-end:url(#mrkr3-62);stroke:#6ca43d;stroke-dasharray:3.5,2.5;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st9 {marker-end:url(#mrkr3-61);stroke:#6ca43d;stroke-dasharray:3.5,2.5;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
 		.st10 {fill:#ffffff;stroke:none;stroke-linecap:butt}
 		.st11 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
@@ -33,7 +33,7 @@
 		<g id="lend3">
 			<path d="M 2 1 L 0 0 L 2 -1 " style="stroke-linecap:round;stroke-linejoin:round;fill:none"/>
 		</g>
-		<marker id="mrkr3-62" class="st5" v:arrowType="3" v:arrowSize="3" orient="auto" markerUnits="strokeWidth"
+		<marker id="mrkr3-61" class="st5" v:arrowType="3" v:arrowSize="3" orient="auto" markerUnits="strokeWidth"
 				overflow="visible">
 			<use xlink:href="#lend3" transform="scale(-7.48,-7.48) "/>
 		</marker>
@@ -51,7 +51,7 @@
 			</v:userDefs>
 			<title>Object lifeline</title>
 			<desc>Systemklient</desc>
-			<g id="shape65-2" v:mID="65" v:groupContext="shape" transform="translate(19.7866,0)">
+			<g id="shape65-2" v:mID="65" v:groupContext="shape" transform="translate(19.7866,5.68434E-014)">
 				<title>Sheet.65</title>
 				<rect x="0" y="293.767" width="51.0236" height="25.5118" class="st1"/>
 			</g>
@@ -132,7 +132,7 @@
 		</g>
 		<g id="shape89-40" v:mID="89" v:groupContext="shape" v:layerMember="0" transform="translate(45.5484,-241.87)">
 			<title>Message.38</title>
-			<desc>Autentisering vha. delt hemmelighet, ev. klientsertifikat</desc>
+			<desc>Autentisering vha. delt hemmelighet</desc>
 			<v:userDefs>
 				<v:ud v:nameU="IsReturn" v:prompt="" v:val="VT0(0):5"/>
 				<v:ud v:nameU="IsAsync" v:prompt="" v:val="VT0(0):26"/>
@@ -140,12 +140,11 @@
 				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
-			<v:textRect cx="109.956" cy="312.192" width="130.76" height="27.2035"/>
+			<v:textRect cx="109.956" cy="312.192" width="128.77" height="17.6036"/>
 			<path d="M0 312.19 L212.43 312.19" class="st4"/>
-			<rect v:rectContext="textBkgnd" x="49.4828" y="302.593" width="120.947" height="19.1997" class="st6"/>
-			<text x="49.48" y="309.79" class="st7" v:langID="1044"><v:paragraph v:horizAlign="1"/><v:tabList/>Autentisering vha. delt hemmelighet,<v:newlineChar/><tspan
-						x="80.74" dy="1.2em" class="st8">ev</tspan>. klientsertifikat</text>		</g>
-		<g id="shape100-49" v:mID="100" v:groupContext="shape" v:layerMember="0" transform="translate(46.1992,-78.7929)">
+			<rect v:rectContext="textBkgnd" x="50.4809" y="307.393" width="118.951" height="9.59985" class="st6"/>
+			<text x="50.48" y="314.59" class="st7" v:langID="1044"><v:paragraph v:horizAlign="1"/><v:tabList/>Autentisering vha. delt hemmelighet</text>		</g>
+		<g id="shape100-48" v:mID="100" v:groupContext="shape" v:layerMember="0" transform="translate(46.1992,-78.7929)">
 			<title>Message.53</title>
 			<desc>Ressursforespørsel med access token</desc>
 			<v:userDefs>
@@ -160,7 +159,7 @@
 			<rect v:rectContext="textBkgnd" x="28.783" y="302.593" width="61.4333" height="19.1997" class="st6"/>
 			<text x="28.78" y="309.79" class="st7" v:langID="1044"><v:paragraph v:horizAlign="1"/><v:tabList/>Ressursforespørsel<v:newlineChar/><tspan
 						x="30.63" dy="1.2em" class="st8">med access token</tspan></text>		</g>
-		<g id="shape102-57" v:mID="102" v:groupContext="shape" v:layerMember="0" transform="translate(165.198,-36.2732)">
+		<g id="shape102-56" v:mID="102" v:groupContext="shape" v:layerMember="0" transform="translate(165.198,-36.2732)">
 			<title>Return Message.55</title>
 			<desc>Ressurstilgang</desc>
 			<v:userDefs>
@@ -172,9 +171,9 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="-59.4996" cy="312.192" width="56.44" height="17.6036"/>
 			<path d="M0 312.19 L-119 312.19" class="st9"/>
-			<rect v:rectContext="textBkgnd" x="-82.8097" y="307.393" width="46.6205" height="9.59985" class="st6"/>
+			<rect v:rectContext="textBkgnd" x="-82.8097" y="307.393" width="46.6205" height="9.59985" class="st10"/>
 			<text x="-82.81" y="314.59" class="st7" v:langID="1044"><v:paragraph v:horizAlign="1"/><v:tabList/>Ressurstilgang</text>		</g>
-		<g id="shape113-65" v:mID="113" v:groupContext="shape" v:layerMember="0" transform="translate(266.112,-112.809)">
+		<g id="shape113-64" v:mID="113" v:groupContext="shape" v:layerMember="0" transform="translate(266.112,-112.809)">
 			<title>Return Message.49</title>
 			<desc>Identity token, access token og ev. refresh token</desc>
 			<v:userDefs>
@@ -186,9 +185,9 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="-109.956" cy="312.192" width="167.59" height="17.6036"/>
 			<path d="M0 312.19 L-219.91 312.19" class="st9"/>
-			<rect v:rectContext="textBkgnd" x="-188.844" y="307.393" width="157.776" height="9.59985" class="st10"/>
+			<rect v:rectContext="textBkgnd" x="-188.844" y="307.393" width="157.776" height="9.59985" class="st6"/>
 			<text x="-188.84" y="314.59" class="st7" v:langID="1044"><v:paragraph v:horizAlign="1"/><v:tabList/>Identity token, access token og ev. refresh token</text>		</g>
-		<g id="shape114-72" v:mID="114" v:groupContext="shape" v:layerMember="0" transform="translate(158.112,-85.8795)">
+		<g id="shape114-71" v:mID="114" v:groupContext="shape" v:layerMember="0" transform="translate(158.112,-85.8795)">
 			<title>Self Message.54</title>
 			<desc>Validering av access token og innhold</desc>
 			<v:userDefs>
@@ -200,9 +199,9 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="7.08661" cy="340.539" width="131.37" height="17.6036"/>
 			<path d="M7.09 319.28 L25.09 319.28 L25.09 361.8 L14.57 361.8" class="st4"/>
-			<rect v:rectContext="textBkgnd" x="-53.688" y="335.739" width="121.549" height="9.59985" class="st6"/>
+			<rect v:rectContext="textBkgnd" x="-53.688" y="335.739" width="121.549" height="9.59985" class="st10"/>
 			<text x="-53.69" y="342.94" class="st7" v:langID="1044"><v:paragraph v:horizAlign="1"/><v:tabList/>Validering av access token og innhold</text>		</g>
-		<g id="group115-79" transform="translate(347.494,-282.973)" v:mID="115" v:groupContext="group">
+		<g id="group115-78" transform="translate(347.494,-282.973)" v:mID="115" v:groupContext="group">
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
 				<v:ud v:nameU="ShowActor" v:prompt="" v:val="VT0(0):5"/>
@@ -210,31 +209,31 @@
 			</v:userDefs>
 			<title>Object lifeline.114</title>
 			<desc>Sentrale registre</desc>
-			<g id="shape116-80" v:mID="116" v:groupContext="shape" transform="translate(0,-3.50057)">
+			<g id="shape116-79" v:mID="116" v:groupContext="shape" transform="translate(0,-3.50057)">
 				<title>Sheet.116</title>
 				<rect x="0" y="293.767" width="51.0236" height="25.5118" class="st1"/>
 			</g>
-			<g id="shape117-82" v:mID="117" v:groupContext="shape" transform="translate(17.0079,-36.0563)">
+			<g id="shape117-81" v:mID="117" v:groupContext="shape" transform="translate(17.0079,-36.0563)">
 				<title>Sheet.117</title>
 				<path d="M8.5 319.28 a0 0 0 1 1 0 0 a0 0 0 1 1 0 0 Z" class="st1"/>
 			</g>
-			<g id="shape118-84" v:mID="118" v:groupContext="shape" transform="translate(17.0079,282.973)">
+			<g id="shape118-83" v:mID="118" v:groupContext="shape" transform="translate(17.0079,282.973)">
 				<title>Sheet.118</title>
 			</g>
-			<g id="shape119-86" v:mID="119" v:groupContext="shape" transform="translate(344.791,319.279) rotate(90)">
+			<g id="shape119-85" v:mID="119" v:groupContext="shape" transform="translate(344.791,319.279) rotate(90)">
 				<title>Sheet.119</title>
 				<path d="M0 319.28 L262.86 319.28" class="st2"/>
 			</g>
-			<g id="shape115-89" v:mID="115" v:groupContext="groupContent">
+			<g id="shape115-88" v:mID="115" v:groupContext="groupContent">
 				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 				<v:textRect cx="25.5118" cy="303.023" width="51.03" height="32.513"/>
 				<rect x="0" y="286.766" width="51.0236" height="32.513" class="st1"/>
 				<text x="4.77" y="299.42" class="st3" v:langID="1044"><v:paragraph v:horizAlign="1"/><v:tabList/>Sentrale <tspan
 							x="6.41" dy="1.2em" class="st8">registre</tspan></text>			</g>
 		</g>
-		<g id="shape120-93" v:mID="120" v:groupContext="shape" v:layerMember="0" transform="translate(256.871,-248.957)">
+		<g id="shape120-92" v:mID="120" v:groupContext="shape" v:layerMember="0" transform="translate(256.871,-248.957)">
 			<title>Self Message.58</title>
-			<desc>Validering av credentials</desc>
+			<desc>Validering av hemmeligheten</desc>
 			<v:userDefs>
 				<v:ud v:nameU="IsReturn" v:prompt="" v:val="VT0(0):5"/>
 				<v:ud v:nameU="IsAsync" v:prompt="" v:val="VT0(0):26"/>
@@ -242,11 +241,11 @@
 				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
-			<v:textRect cx="44.1347" cy="327.868" width="89.55" height="17.6036"/>
+			<v:textRect cx="62.2764" cy="327.868" width="105.13" height="17.6036"/>
 			<path d="M5.58 319.28 L26.59 319.28 L26.59 336.29 L16.07 336.29" class="st4"/>
-			<rect v:rectContext="textBkgnd" x="4.26816" y="323.069" width="79.7333" height="9.59985" class="st6"/>
-			<text x="4.27" y="330.27" class="st7" v:langID="1044"><v:paragraph v:horizAlign="1"/><v:tabList/>Validering av credentials</text>		</g>
-		<g id="shape121-100" v:mID="121" v:groupContext="shape" v:layerMember="0" transform="translate(265.461,-219.193)">
+			<rect v:rectContext="textBkgnd" x="14.6211" y="323.069" width="95.3108" height="9.59985" class="st6"/>
+			<text x="14.62" y="330.27" class="st7" v:langID="1044"><v:paragraph v:horizAlign="1"/><v:tabList/>Validering av hemmeligheten</text>		</g>
+		<g id="shape121-99" v:mID="121" v:groupContext="shape" v:layerMember="0" transform="translate(265.461,-219.193)">
 			<title>Message.119</title>
 			<desc>Dataoppslag</desc>
 			<v:userDefs>
@@ -260,7 +259,7 @@
 			<path d="M0 326.37 L100.06 326.37" class="st4"/>
 			<rect v:rectContext="textBkgnd" x="33.5462" y="321.566" width="40.4528" height="9.59985" class="st6"/>
 			<text x="33.55" y="328.77" class="st7" v:langID="1044"><v:paragraph v:horizAlign="1"/><v:tabList/>Dataoppslag</text>		</g>
-		<g id="shape122-107" v:mID="122" v:groupContext="shape" v:layerMember="0" transform="translate(373.006,-190.847)">
+		<g id="shape122-106" v:mID="122" v:groupContext="shape" v:layerMember="0" transform="translate(373.006,-190.847)">
 			<title>Return Message</title>
 			<desc>Claims</desc>
 			<v:userDefs>
@@ -274,7 +273,7 @@
 			<path d="M0 312.19 L-107.54 312.19" class="st9"/>
 			<rect v:rectContext="textBkgnd" x="-64.4168" y="307.393" width="21.2888" height="9.59985" class="st6"/>
 			<text x="-64.42" y="314.59" class="st7" v:langID="1044"><v:paragraph v:horizAlign="1"/><v:tabList/>Claims</text>		</g>
-		<g id="shape123-114" v:mID="123" v:groupContext="shape" v:layerMember="0" transform="translate(258.374,-169.587)">
+		<g id="shape123-113" v:mID="123" v:groupContext="shape" v:layerMember="0" transform="translate(258.374,-169.587)">
 			<title>Self Message.125</title>
 			<desc>Transformering av claims</desc>
 			<v:userDefs>
