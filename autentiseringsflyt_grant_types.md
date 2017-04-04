@@ -27,7 +27,7 @@ Ved implicit flow vil tokens bli sendt via browseren, altså frontkanalen. Av si
 
 ### Eksempel på flyt for en JavaScript/SPA-klient
 
-![SPA](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/master/images/SPA.svg)
+![SPA](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/b4ec6185/images/SPA.svg)
 
 ## Authorization code
 
@@ -37,11 +37,11 @@ I motsetning til ved implicit flow, overføres tokens ikke via frontkanalen (bro
 
 ### Eksempel på flyt for en webapplikasjon med delt hemmelighet med FIA STS
 
-![Webapplikasjon](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/047a729b/images/Webapplikasjon.svg)
+![Webapplikasjon](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/b4ec6185/images/Webapplikasjon.svg)
 
 ### Eksempel på flyt for en desktop- eller mobilapplikasjon med dynamisk opprettet PKCE-hemmelighet overfor FIA STS
 
-![Desktopapplikasjon](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/047a729b/images/Desktopapplikasjon.svg)
+![Desktopapplikasjon](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/b4ec6185/images/Desktopapplikasjon.svg)
 
 ## Hybrid
 
@@ -57,7 +57,7 @@ En klient autentiserer seg mot Token-endepunktet ved hjelp av klientidentifikato
 
 ### Eksempel på flyt for en systemklient med delt hemmelighet eller klientsertifikat overfor FIA STS
 
-![Systemklient](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/047a729b/images/Systemklient.svg)
+![Systemklient](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/b4ec6185/images/Systemklient.svg)
 
 ## Resource owner password
 
