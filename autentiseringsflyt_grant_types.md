@@ -31,9 +31,15 @@ Ved implicit flow vil tokens bli sendt via browseren, altså frontkanalen. Av si
 
 ## Authorization code
 
-I motsetning til ved implicit flow, overføres tokens ikke via frontkanalen (browseren) med authorization code flow. En autorisasjonskode overføres via frontkanalen inn til klienten, som videre kontakter STS-ens Token-endepunkt vedlagt autorisasjonskoden, og får et identity token, et access token og eventuelt et refresh token i retur. I tillegg må klienten autentisere seg mot STS-en med eksempelvis en delt hemmelighet, for å få lov til å bruke autorisasjonskoden til å hente ut informasjon. Dette for å hindre at autorisasjonskoden brukes av uvedkommende tredjepart.
+I motsetning til ved implicit flow, overføres tokens ikke via frontkanalen (browseren) med authorization code flow. En autorisasjonskode overføres via frontkanalen inn til klienten, som videre kontakter STS-ens Token-endepunkt vedlagt autorisasjonskoden, og får et identity token, et access token og eventuelt et refresh token i retur. I tillegg må klienten autentisere seg mot STS-en med eksempelvis en delt hemmelighet, eller et klientsertifikat, for å få lov til å bruke autorisasjonskoden til å hente ut informasjon. Dette for å hindre at autorisasjonskoden brukes av uvedkommende tredjepart.
 
 [Klientautentisering](http://openid.net/specs/openid-connect-core-1_0.html#ClientAuthentication) er beskrevet i spesifikasjonen for OpenID Connect Core 1.0.
+
+### PKCE (Proof Key for Code Exchange)
+
+I tilfeller der klienten befinner seg i et miljø som gjør at den ikke kan holde på en delt statisk hemmelighet over tid, er PKCE  et alternativ. PKCE-protokollen er spesifisert [her](https://tools.ietf.org/html/rfc7636#section-4). I korte trekk oppretter klienten en dynamisk hemmelighet, som hashes og vedlegges, i forbindelse med forespørsel om en autorisasjonskode. FIA STS må på sin side internt assosiere den hashede hemmeligheten med autorisasjonskoden som utstedes. Når autorisasjonskoden senere brukes mot token-endepunktet hos FIA STS, må hemmeligheten, i klartekst, vedlegges autorisasjonskoden. FIA STS hasher klarteksthemmeligheten og sammenligner med den hashede hemmeligheten som er assosiert med autorisasjonskoden.
+
+![PKCE](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/146aa8b4/images/PKCE.svg)
 
 ### Eksempel på flyt for en webapplikasjon med delt hemmelighet med FIA STS
 
@@ -57,7 +63,7 @@ En klient autentiserer seg mot Token-endepunktet ved hjelp av klientidentifikato
 
 ### Eksempel på flyt for en systemklient med delt hemmelighet eller klientsertifikat overfor FIA STS
 
-![Systemklient](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/b4ec6185/images/Systemklient.svg)
+![Systemklient](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/146aa8b4/images/Systemklient.svg)
 
 ## Resource owner password
 
