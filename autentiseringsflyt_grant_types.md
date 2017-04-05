@@ -19,7 +19,7 @@ OAuth 2.0 definerer 6 grant types:
 
 FIA STS implementerer, eller tilrettelegger for, det som kombinert blir 7 grant types (autentiseringsflyter), som vil kort forklares her.
 
-## Implicit
+## Implicit grant
 
 Implicit flow er primært tiltenkt browserbaserte applikasjoner, det være seg enten for brukerautentisering alene, eller både autentiserings- og access token-forespørsler, der det sistnevnte vil gjelde for JavaScript-applikasjoner. En SPA (Single Page Application) er det typiske brukstilfellet for implicit flow.
 
@@ -29,11 +29,15 @@ Ved implicit flow vil tokens bli sendt via browseren, altså frontkanalen. Av si
 
 ![SPA](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/b4ec6185/images/SPA.svg)
 
-## Authorization code
+## Authorization code grant
 
 I motsetning til ved implicit flow, overføres tokens ikke via frontkanalen (browseren) med authorization code flow. En autorisasjonskode overføres via frontkanalen inn til klienten, som videre kontakter STS-ens Token-endepunkt vedlagt autorisasjonskoden, og får et identity token, et access token og eventuelt et refresh token i retur. I tillegg må klienten autentisere seg mot STS-en med eksempelvis en delt hemmelighet, eller et klientsertifikat, for å få lov til å bruke autorisasjonskoden til å hente ut informasjon. Dette for å hindre at autorisasjonskoden brukes av uvedkommende tredjepart.
 
 [Klientautentisering](http://openid.net/specs/openid-connect-core-1_0.html#ClientAuthentication) er beskrevet i spesifikasjonen for OpenID Connect Core 1.0.
+
+### Eksempel på flyt for en webapplikasjon med delt hemmelighet med FIA STS
+
+![Webapplikasjon](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/b4ec6185/images/Webapplikasjon.svg)
 
 ### PKCE (Proof Key for Code Exchange)
 
@@ -43,21 +47,17 @@ I korte trekk oppretter klienten en dynamisk hemmelighet, som hashes og vedlegge
 
 ![PKCE](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/146aa8b4/images/PKCE.svg)
 
-### Eksempel på flyt for en webapplikasjon med delt hemmelighet med FIA STS
-
-![Webapplikasjon](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/b4ec6185/images/Webapplikasjon.svg)
-
-### Eksempel på flyt for en desktop- eller mobilapplikasjon med dynamisk opprettet PKCE-hemmelighet overfor FIA STS
+#### Eksempel på flyt for en desktop- eller mobilapplikasjon med dynamisk opprettet PKCE-hemmelighet overfor FIA STS
 
 ![Desktopapplikasjon](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/b4ec6185/images/Desktopapplikasjon.svg)
 
-## Hybrid
+## Hybrid grant
 
 Hybrid flow kombinerer mulighetene ved implicit og authorization code flow. For de fleste konfigurasjoner vil autorisasjonskode og identity token overføres via frontkanalen, mens access token og eventuelt refresh token hentes via bakkanalen. Det er mulig å også overføre access token via frontkanalen, for spesielle brukstilfeller.
 
 Hybrid flow kan gjerne brukes for serverside-applikasjoner med en delt statisk hemmelighet, og native desktop- eller mobilapplikasjoner sammen med PKCE.
 
-## Client credentials
+## Client credentials grant
 
 Client credentials er den enkleste granttypen, og brukes for server-til-server-kommunikasjon. Tokens forespørres alltid på vegne av en klient, ikke en bruker.
 
@@ -71,7 +71,7 @@ En klient autentiserer seg mot Token-endepunktet ved hjelp av klientidentifikato
 
 ![Systemklient_klientsertifikat](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/ea539872/images/Systemklient_klientsertifikat.svg)
 
-## Resource owner password
+## Resource owner password grant
 
 Ikke relevant for FIA STS siden løsningen ikke eier en brukerbase.
 
