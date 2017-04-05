@@ -2,13 +2,13 @@
 
 Grant types, eller autentiseringsflyt, er ulike måter for hvordan en klient kan samhandle med STS-en.
 
-OpenID Connect 1.0 definerer 3 forskjellige autentiseringsflyter:
+OpenID Connect 1.0 definerer 3 forskjellige autentiseringsflyter (eksterne lenker):
 
 -	[Authorization code flow](http://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth)
 -	[Implicit flow](http://openid.net/specs/openid-connect-core-1_0.html#ImplicitFlowAuth)
 -	[Hybrid flow](http://openid.net/specs/openid-connect-core-1_0.html#HybridFlowAuth)
 
-OAuth 2.0 definerer 6 grant types:
+OAuth 2.0 definerer 6 grant types (eksterne lenker):
 
 -	[Authorization code grant](https://tools.ietf.org/html/rfc6749#section-4.1)
 -	[Implicit grant](https://tools.ietf.org/html/rfc6749#section-4.2)
