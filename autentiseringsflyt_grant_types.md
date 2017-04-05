@@ -37,7 +37,9 @@ I motsetning til ved implicit flow, overføres tokens ikke via frontkanalen (bro
 
 ### PKCE (Proof Key for Code Exchange)
 
-I tilfeller der klienten befinner seg i et miljø som gjør at den ikke kan holde på en delt statisk hemmelighet over tid, er PKCE  et alternativ. PKCE-protokollen er spesifisert [her](https://tools.ietf.org/html/rfc7636#section-4). I korte trekk oppretter klienten en dynamisk hemmelighet, som hashes og vedlegges en forespørsel om en autorisasjonskode. FIA STS må på sin side internt assosiere den hashede hemmeligheten med autorisasjonskoden som utstedes. Når koden senere brukes mot token-endepunktet hos FIA STS, må hemmeligheten, i klartekst, vedlegges forespørselen. FIA STS hasher klarteksthemmeligheten og sammenligner med autorisasjonskodens assosierte hemmelighet.
+I tilfeller der klienten befinner seg i et miljø som gjør at den ikke kan holde på en delt statisk hemmelighet over tid, er PKCE  et alternativ. PKCE-protokollen er spesifisert [her](https://tools.ietf.org/html/rfc7636#section-4).
+
+I korte trekk oppretter klienten en dynamisk hemmelighet, som hashes og vedlegges autentiseringsforespørselen for brukeren. FIA STS må på sin side internt assosiere den hashede hemmeligheten med autorisasjonskoden som utstedes etter autentisering hos den brukervalgte identitetstilbyderen. Når koden senere brukes mot token-endepunktet hos FIA STS, må hemmeligheten, i klartekst, vedlegges forespørselen. FIA STS hasher klarteksthemmeligheten og sammenligner med autorisasjonskodens assosierte hemmelighet.
 
 ![PKCE](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/146aa8b4/images/PKCE.svg)
 
@@ -53,7 +55,7 @@ I tilfeller der klienten befinner seg i et miljø som gjør at den ikke kan hold
 
 Hybrid flow kombinerer mulighetene ved implicit og authorization code flow. For de fleste konfigurasjoner vil autorisasjonskode og identity token overføres via frontkanalen, mens access token og eventuelt refresh token hentes via bakkanalen. Det er mulig å også overføre access token via frontkanalen, for spesielle brukstilfeller.
 
-Hybrid flow kan gjerne brukes for serverside-applikasjoner og native desktop- eller mobilapplikasjoner.
+Hybrid flow kan gjerne brukes for serverside-applikasjoner med en delt statisk hemmelighet, og native desktop- eller mobilapplikasjoner sammen med PKCE.
 
 ## Client credentials
 
