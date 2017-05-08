@@ -2,7 +2,7 @@
 
 | Navn | Kortnavn | Eksempelverdi | Beskrivelse |
 | --- | --- | --- | --- |
-| http://nhn.no/identity/claims/nnid | identity/nnin | 04048900181 | Norwegian national identification number - fødselsnummer |
+| http://nhn.no/identity/claims/nnin | identity/nnin | 04048900181 | Norwegian national identification number - fødselsnummer |
 | http://nhn.no/identity/claims/lastname | identity/last_name | Nordmann | |
 | http://nhn.no/identity/claims/firstname | identity/first_name | Ola | |
 | http://nhn.no/identity/claims/middlename | identity/middle_name | Olsen | |
