@@ -5,8 +5,6 @@ Klienter og API-ressurser er underordnet en konfigurasjonseier. En konfigurasjon
 
 ![Konfigurasjonseier](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/fa74b598/images/Konfigurasjonseier.png)
 
-![Sekvens_DCR](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/fa74b598/images/Sekvens_DCR.svg)
-
 ## API-ressurs
 
 En API-ressurs er et tjenestegrensesnitt som STS-en beskytter. I motsetning til identitetsressurser kan en API-ressurs være tilknyttet flere scopes. API-ressursen kan være konfigurert med en API secret, som videre er en forutsetning for å kunne bruke utstedt reference token mot Introspection-endepunktet.
