@@ -1,6 +1,12 @@
 # Klientregistrering
 FIA tilbyr et REST API for administrasjon av klienter og ressurser.
 
+Klienter og API-ressurser er underordnet en konfigurasjonseier. En konfigurasjonseier opprettes per organisasjon, eller del av organisasjonen, og kan kun manipulere data for sine klienter.
+
+![Konfigurasjonseier](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/fa74b598/images/Konfigurasjonseier.png)
+
+![Sekvens_DCR](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/fa74b598/images/Sekvens_DCR.svg)
+
 ## API-ressurs
 
 En API-ressurs er et tjenestegrensesnitt som STS-en beskytter. I motsetning til identitetsressurser kan en API-ressurs være tilknyttet flere scopes. API-ressursen kan være konfigurert med en API secret, som videre er en forutsetning for å kunne bruke utstedt reference token mot Introspection-endepunktet.
@@ -16,7 +22,15 @@ API-ressurser kan være tilknyttet flere claims, som representeres i utstedte ac
 | display_name | string | Nei | For bruk i consent screen |
 | description | string | Nei | For bruk i consent screen |
 | authorization_scopes | string[] | Nei | |
-| create_secret | boolean | Nei | For generering av API secret for bruk mot introspection endpoint |
+| secret | secret | Nei | Secret for bruk mot introspection endpoint - type må være shared_secret eller x509_cert_base64 |
+
+#### secret
+```json
+{
+  "type": "shared_secret",
+  "value": "[long_random_string]"
+}
+```
 
 ### Output
 
@@ -27,7 +41,6 @@ API-ressurser kan være tilknyttet flere claims, som representeres i utstedte ac
 | display_name | string | |
 | description | string | |
 | authorization_scopes | string[] | |
-| secret | string | Eventuelt generert API secret |
 
 ## Klient
 
@@ -64,13 +77,21 @@ En klient er en applikasjon som kan forespørre tokens fra STS-en. De mest sentr
 | sliding_refresh_token_lifetime | int | Nei | 1 296 000 | |
 | client_claims | client_claim[] | Nei | | |
 | allowed_scopes | string[] | Nei | | Tillatte scopes - globale eller definert under API Resources |
-| create_secret | boolean | Nei | false | For generering av client_secret |
+| secret | secret | Nei | |Ved behov for å autentisere klienten mot STS-en - type må være shared_secret eller x509_cert_base64 |
 
 #### client_claim
 ```json
 {
   "type": "org_no"
   "value": "123456789"
+}
+```
+
+#### secret
+```json
+{
+  "type": "shared_secret",
+  "value": "[long_random_string]"
 }
 ```
 
@@ -100,4 +121,3 @@ En klient er en applikasjon som kan forespørre tokens fra STS-en. De mest sentr
 | sliding_refresh_token_lifetime | int | |
 | client_claims | client_claim[] | |
 | allowed_scopes | string[] | |
-| create_secret | boolean | |
