@@ -80,7 +80,7 @@ En klient er en applikasjon som kan forespørre tokens fra STS-en. De mest sentr
 #### client_claim
 ```json
 {
-  "type": "org_no"
+  "type": "org_no",
   "value": "123456789"
 }
 ```
