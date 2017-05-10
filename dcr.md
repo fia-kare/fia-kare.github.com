@@ -1,7 +1,7 @@
 # Klientregistrering
 FIA tilbyr et REST API for administrasjon av klienter og ressurser.
 
-Klienter og API-ressurser er underordnet en konfigurasjonseier. En konfigurasjonseier opprettes per organisasjon, eller del av organisasjonen, og kan kun manipulere data for sine klienter.
+Klienter og API-ressurser er underordnet en konfigurasjonseier. En konfigurasjonseier opprettes per organisasjon, eller del av organisasjonen, og kan kun manipulere data for sine klienter og ressurser.
 
 ![Konfigurasjonseier](https://cdn.rawgit.com/fia-sikkerhet/fia-sikkerhet.github.com/fa74b598/images/Konfigurasjonseier.png)
 
