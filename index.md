@@ -16,6 +16,8 @@ FIAs STS er en RP-STS (Relying Party) hvilket vil si at tjenesten ikke autentise
 
 - [Claims](claims.md)
 
+- [Scopes](scopes.md)
+
 - [Klientregistrering](dcr.md)
 
 - [Autentiseringsflyt og grant types](autentiseringsflyt_grant_types.md)
