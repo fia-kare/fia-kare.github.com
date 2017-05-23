@@ -1,11 +1,9 @@
 # Claims
 
-Rammeverk-claims 
 | Navn | Eksempelverdi | Beskrivelse |
 | --- | --- | --- |
 | at_hash | y9WtN9oBLG9q0J6NDbAHZQ | OIDC Access Token hash value |
 | aud | kjernejournal | JWT Audience - hvem token-et er tiltenkt |
-
 | exp | 1495545339 | JWT Expiration Time |
 | iat | 1495545039 | JWT Issued At | 
 | iss | https://helseid-sts.utvikling.nhn.no | JWT Issuer |
