@@ -13,7 +13,7 @@
 | https://nhn.no/claims/hpr/profession | AU | Verdier iht. NHNs kodeverk |
 | https://nhn.no/claims/hpr/authorization | | JSON-struktur iht. NHNs kodeverk |
 
-## authorization
+## https://nhn.no/claims/hpr/authorization
 
 ```json
 {
