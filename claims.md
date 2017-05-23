@@ -1,7 +1,18 @@
 # Claims
 
+Rammeverk-claims 
 | Navn | Eksempelverdi | Beskrivelse |
 | --- | --- | --- |
+| at_hash | y9WtN9oBLG9q0J6NDbAHZQ | OIDC Access Token hash value |
+| aud | kjernejournal | JWT Audience - hvem token-et er tiltenkt |
+
+| exp | 1495545339 | JWT Expiration Time |
+| iat | 1495545039 | JWT Issued At | 
+| iss | https://helseid-sts.utvikling.nhn.no | JWT Issuer |
+| nbf | 1495545039 | JWT Not before |
+| nonce | e7bfdd93b9474457a0bf13976c3b30ef | OIDC - random verdi som brukes mot replay-angrep |
+| sid | | |
+| sub | | Hash-verdi av client_id + pid + salt |
 | name | Ola Olsen Nordmann | OIDC spec claim - fullt navn |
 | given_name | Ola | OIDC spec claim - fornavn |
 | family_name | Nordmann | OIDC spec claim - etternavn |
