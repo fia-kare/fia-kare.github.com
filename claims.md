@@ -1,15 +1,17 @@
 # Claims
 
-| Navn | Kortnavn | Eksempelverdi | Beskrivelse |
-| --- | --- | --- | --- |
-| http://nhn.no/identity/claims/nnin | identity/nnin | 04048900181 | Norwegian national identification number - fødselsnummer |
-| http://nhn.no/identity/claims/lastname | identity/last_name | Nordmann | |
-| http://nhn.no/identity/claims/firstname | identity/first_name | Ola | |
-| http://nhn.no/identity/claims/middlename | identity/middle_name | Olsen | |
-| http://nhn.no/identity/claims/securitylevel | identity/security_level | 3 | Definert i eller iht. identitetstilbyder |
-| http://nhn.no/hpr/claims/hprnumber | hpr/hpr_number | 181000001 | |
-| http://nhn.no/hpr/claims/profession | hpr/profession | AU | Verdier iht. NHNs kodeverk |
-| http://nhn.no/hpr/claims/authorization | hpr/authorization | | JSON-struktur iht. NHNs kodeverk |
+| Navn | Eksempelverdi | Beskrivelse |
+| --- | --- | --- |
+| name | Ola Olsen Nordmann | OIDC spec claim - fullt navn |
+| given_name | Ola | OIDC spec claim - fornavn |
+| family_name | Nordmann | OIDC spec claim - etternavn |
+| middle_name | Olsen | OIDC spec claim - mellomnavn |
+| https://nhn.no/claims/identity/pid | 04048900181 | Personidentifikator - typisk norsk fødselsnummer, men med støtte for utenlandske |
+| https://nhn.no/claims/identity/security_level | 3 | Definert av "Rammeverk for autentisering og uavviselighet i elektronisk kommunikasjon med og i offentlig sektor". Mulige verdier 2, 3 eller 4. Fastsatt i eller iht. identitetstilbyder |
+| https://nhn.no/claims/identity/assurance_level | substantial | Definert av eIDAS. Mulige verdier: low, substantial eller high. Fastsatt i eller iht. identitetstilbyder.  |
+| https://nhn.no/claims/hpr/hpr_number | 181000001 | Helsepersonellnummer |
+| https://nhn.no/claims/hpr/profession | AU | Verdier iht. NHNs kodeverk |
+| https://nhn.no/claims/hpr/authorization | | JSON-struktur iht. NHNs kodeverk |
 
 ## authorization
 
