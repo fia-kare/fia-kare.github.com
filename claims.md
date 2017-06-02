@@ -9,7 +9,7 @@
 | client_id | `https://dips.no/arena` | Identifiserer applikasjonen |
 | exp | 1495545339 | JWT Expiration Time |
 | iat | 1495545039 | JWT Issued At |
-| idp | `https://idporten.difi.no` | Identity Provider - identitetstilbyderen brukeren autentiserte seg hos |
+| idp | `https://idporten.difi.no` | Identity Provider - identitetstilbyderen brukeren autentiserte seg hos  |
 | iss | `https://helseid-sts.utvikling.nhn.no` | JWT Issuer |
 | jti | ce49934e518a8197a5baff11d8d3f908 | JWT ID - unik for tokenet |
 | nbf | 1495545039 | JWT Not before |
