@@ -1,28 +1,14 @@
+
+Her finner du kodeeksempler og anbefalinger for forskjellige systemer, plattformer og språk.
+
 Autentisering
-	Web Server App
-		- Asp.Net MVC
-		- Java
-		- Node
-		- Python?
-	Javascript App
-		- Angular 1/2
-		- React
-		- jQuery
-	Tykk klient (Desktop)
-		- .Net Winforms
-		- .Net WPF
-	Mobil App
-		- Xamarin.Forms
-		- Android
-		- iOS
 
 Sikring av tjenester
-	API:
-		- Asp.Net Web API
-		- DropWizard?
-		- Service Stack?
-	Klienter:
-		- Web Server App
-		- Javascript App
-		- Tykk klient (Desktop)
-		- Mobil App
+
+
+Konkreter oppgaver:
+
+Velge en spesifikk identitetstilbyder
+
+Velge et spesifikt autentiseringsnivå
+
