@@ -1,0 +1,28 @@
+Autentisering
+	Web Server App
+		- Asp.Net MVC
+		- Java
+		- Node
+		- Python?
+	Javascript App
+		- Angular 1/2
+		- React
+		- jQuery
+	Tykk klient (Desktop)
+		- .Net Winforms
+		- .Net WPF
+	Mobil App
+		- Xamarin.Forms
+		- Android
+		- iOS
+
+Sikring av tjenester
+	API:
+		- Asp.Net Web API
+		- DropWizard?
+		- Service Stack?
+	Klienter:
+		- Web Server App
+		- Javascript App
+		- Tykk klient (Desktop)
+		- Mobil App
