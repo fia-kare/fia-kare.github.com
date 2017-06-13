@@ -1,17 +1,33 @@
-Autentisering
-	Web Server App
-		- Asp.Net MVC
-		- Java
-		- Node
-		- Python?
-	Javascript App
-		- Angular 1/2
-		- React
-		- jQuery
-	Tykk klient (Desktop)
-		- .Net Winforms
-		- .Net WPF
-	Mobil App
-		- Xamarin.Forms
-		- Android
-		- iOS
+Når du skal implementere autentisering av brukere ved bruk av OpenId Connect protokollen vil applikasjonstypen bestemme en del detaljer rundt implementasjonen.
+OpenId Connect og OAuth 2.0 definerer tre autentiseringsflyter. Autentiseringsflytene skiller seg litt fra hverandre, og er tiltenkt forskjellige applikasjonstyper.
+I hovedsak skiller vi mellom applikasjoner som er i stand til å ta vare på hemmeligheter, og applikasjoner som ikke kan ta vare på hemmeligheter.
+Hemmelighetene det er snakk om i denne sammenhengen kan for eksempel være passord som i kombinasjon med en id kan autentisere klienten (applikasjonen).
+
+Eksempler på applikasjoner som ikke håndterer hemmeligheter på en god nok måte er:
+- Javascript Apps - AngularJS, React 
+- Native Apps - Mobile og Desktop apps
+- Hybrid Mobile Apps - Cordova/Phonegap
+
+Disse applikasjonstypene installeres og kjøres på maskinvare hos brukeren, og selv om det finnes måter å lagre hemmelig informasjon på en trygg måte både på pc'er og mobile enheter må vi gå ut ifra at disse applikasjonene ikke kan ta vare på sine hemmeligheter på en god nok måte.
+
+Det finnes mange tilgjengelige klientbibliotek for de fleste språk og plattformer som du kan benytte i ditt system.
+Vi anbefaler at du ikke forsøker å lage din egen implementasjon, med mindre du har svært god forståelse av protokollene som er i spill og hvilke sikkerhetsrisiko du må ta hensyn til i implementasjonen.
+
+Under finner du noen eksempler på hvordan du kan implementere autentisering ved bruk av OpenId Connect i forskjellige språk og plattformer ved bruk av kjente bibliotek:
+
+Javascript App
+	- Angular 1/2
+	- React
+	- jQuery
+Tykk klient (Desktop)
+	- .Net Winforms
+	- .Net WPF
+Mobil App
+	- Xamarin.Forms
+	- Android
+	- iOS
+Web Server App
+	- Asp.Net MVC
+	- Java
+	- Node
+	- Python?
