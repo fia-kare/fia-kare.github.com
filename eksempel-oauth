@@ -1,1 +1,12 @@
 
+
+Sikring av tjenester
+	API:
+		- Asp.Net Web API
+		- DropWizard?
+		- Service Stack?
+	Klienter:
+		- Web Server App
+		- Javascript App
+		- Tykk klient (Desktop)
+		- Mobil App
