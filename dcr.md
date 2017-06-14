@@ -26,7 +26,7 @@ API-ressurser kan være tilknyttet flere claims, som representeres i utstedte ac
 ```json
 {
   "type": "shared_secret",
-  "value": "[long_random_string]"
+  "value": "[long_random_string]",
   "expiration": "23.11.2099"
 }
 ```
