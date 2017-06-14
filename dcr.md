@@ -20,13 +20,14 @@ API-ressurser kan være tilknyttet flere claims, som representeres i utstedte ac
 | display_name | string | Nei | For bruk i consent screen |
 | description | string | Nei | For bruk i consent screen |
 | authorization_scopes | string[] | Nei | |
-| secret | secret | Nei | Secret for bruk mot introspection endpoint - type må være shared_secret eller x509_cert_base64 |
+| secrets | secret[] | Nei | Secrets for bruk mot introspection endpoint - type må være shared_secret eller x509_cert_base64. Expiration (UTC i format: "dd.MM.yyyy") lik null betyr at hemmeligheten ikke utløper. |
 
 #### secret
 ```json
 {
   "type": "shared_secret",
   "value": "[long_random_string]"
+  "expiration": "23.11.2099"
 }
 ```
 
@@ -75,7 +76,7 @@ En klient er en applikasjon som kan forespørre tokens fra STS-en. De mest sentr
 | sliding_refresh_token_lifetime | int | Nei | 1 296 000 | |
 | client_claims | client_claim[] | Nei | | |
 | allowed_scopes | string[] | Nei | | Tillatte scopes - globale eller definert under API Resources |
-| secret | secret | Nei | |Ved behov for å autentisere klienten mot STS-en - type må være shared_secret eller x509_cert_base64 |
+| secrets | secret[] | Nei | | Ved behov for å autentisere klienten mot STS-en - type må være shared_secret eller x509_cert_base64. Expiration (UTC i format: "dd.MM.yyyy") lik null betyr at hemmeligheten ikke utløper. |
 
 #### client_claim
 ```json
@@ -89,7 +90,8 @@ En klient er en applikasjon som kan forespørre tokens fra STS-en. De mest sentr
 ```json
 {
   "type": "shared_secret",
-  "value": "[long_random_string]"
+  "value": "[long_random_string]",
+  "expiration": null
 }
 ```
 
