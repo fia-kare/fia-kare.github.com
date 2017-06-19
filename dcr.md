@@ -1,3 +1,5 @@
+
+
 # Klientregistrering
 FIA tilbyr et REST API for administrasjon av klienter og ressurser.
 
@@ -40,6 +42,54 @@ API-ressurser kan være tilknyttet flere claims, som representeres i utstedte ac
 | display_name | string | |
 | description | string | |
 | authorization_scopes | string[] | |
+
+### Tildeling av autorization_scopes til eksterne klienter
+Det er mulig å gi eksterne klienter tilgang til autorisasjons-scopes for Api Ressurser. En ekstern klient er en klient som eies av en annen Configuration Owner enn den som eier API Ressursen.
+
+Endepunktet for å registrere, endre og hente ut autorisasjonsskop satt på eksterne klienter er
+```
+https://{sts_adresse}/api/connect/externalScope/register
+```
+
+Endepunktet støtter POST, PUT og DELETE
+
+#### POST
+Legg til et scope for en klient. Bruk følgende parametre i body.
+```json
+{
+"external_client_id": "[client_id]",
+"scope": "[navn på scope, inkludert configuration owner prefix]",
+"api_resource_id_for_scope": "[id til api resource som har scopet som en autorization_scope]"
+}
+```
+
+Returnerer "true" ved suksess, "false" om noe feiler. 
+
+#### DELETE
+Slett et eksternt scope.     	
+
+```json
+{
+"external_client_id": "[client_id]",
+"scope": "[navn på scope, inkludert configuration owner prefix]",
+"api_resource_id_for_scope": "[id til api resource som har scopet som en autorization_scope]"
+}
+```
+
+Returnerer "true" ved suksess, "false" om noe feiler. 
+
+
+#### GET
+Hent ut en liste med alle eksterne client_id-er som har blitt tildelt et scope. Merk at egne clienter med dette scopet ikke returneres.
+
+```
+?scope=[navn på scope, inkludert configuration owner prefix]
+```
+
+Det er ikke mulig:
+* å slette api resources med scope som er tildelt eksterne klienter.
+* å fjerne scopes fra en api ressures som er tildelt en eller fler eksterne klienter.
+
 
 ## Klient
 
