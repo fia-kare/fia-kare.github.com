@@ -44,14 +44,14 @@ API-ressurser kan være tilknyttet flere claims, som representeres i utstedte ac
 | authorization_scopes | string[] | |
 
 ### Tildeling av autorization_scopes til eksterne klienter
-Det er mulig å gi eksterne klienter tilgang til autorisasjons-scopes for Api Ressurser. En ekstern klient er en klient som eies av en annen Configuration Owner enn den som eier API Ressursen.
+Det er mulig å gi eksterne klienter tilgang til autorisasjons-scopes for API-ressurser. En ekstern klient er en klient som eies av en annen Configuration Owner enn den som eier API-ressursen.
 
-Endepunktet for å registrere, endre og hente ut autorisasjonsskop satt på eksterne klienter er
+Endepunktet for å registrere, endre og hente ut autorisasjons-scope satt på eksterne klienter er
 ```
 https://{sts_adresse}/api/connect/externalScope/register
 ```
 
-Endepunktet støtter POST, PUT og DELETE
+Endepunktet støtter POST, PUT og DELETE.
 
 #### POST
 Legg til et scope for en klient. Bruk følgende parametre i body.
@@ -80,15 +80,15 @@ Returnerer "true" ved suksess, "false" om noe feiler.
 
 
 #### GET
-Hent ut en liste med alle eksterne client_id-er som har blitt tildelt et scope. Merk at egne clienter med dette scopet ikke returneres.
+Hent ut en liste med client_id for alle eksterne klienter som har blitt tildelt et scope. Merk at klienter under egen configuration owner med dette scopet ikke returneres.
 
 ```
 ?scope=[navn på scope, inkludert configuration owner prefix]
 ```
 
 Det er ikke mulig:
-* å slette api resources med scope som er tildelt eksterne klienter.
-* å fjerne scopes fra en api ressures som er tildelt en eller fler eksterne klienter.
+* å slette API-ressurser med scope som er tildelt eksterne klienter.
+* å fjerne scopes fra en apiressurs som er tildelt en eller fler eksterne klienter.
 
 
 ## Klient
