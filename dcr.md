@@ -21,8 +21,20 @@ API-ressurser kan være tilknyttet flere claims, som representeres i utstedte ac
 | name | string | Ja | Må være unikt |
 | display_name | string | Nei | For bruk i consent screen |
 | description | string | Nei | For bruk i consent screen |
-| authorization_scopes | string[] | Nei | |
+| authorization_scopes | scope[] | Nei | name, user_claims |
 | secrets | secret[] | Nei | Secrets for bruk mot introspection endpoint - type må være shared_secret eller x509_cert_base64. Expiration (UTC i format: "dd.MM.yyyy") lik null betyr at hemmeligheten ikke utløper. |
+
+#### scope
+```json
+{
+  "name": "Min api-ressurs",
+  "user_claims":
+    [
+      "https://nhn.no/claims/identity/security_level",
+      "https://nhn.no/claims/identity/pid"
+    ],
+}
+```
 
 #### secret
 ```json
