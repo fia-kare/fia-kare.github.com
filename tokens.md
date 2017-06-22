@@ -51,6 +51,7 @@ eyJhbGciOiJSUzI1NiIsImtpZCI6IkE4RjcwQTI3QjM1MDdDMDYwREM4Qjg3MUI4REIyNEZFMzBFNTc5
 ```
 
 ### Dekodet payload:
+
 ```json
 {
   "nbf": 1498132936,
@@ -71,6 +72,24 @@ eyJhbGciOiJSUzI1NiIsImtpZCI6IkE4RjcwQTI3QjM1MDdDMDYwREM4Qjg3MUI4REIyNEZFMzBFNTc5
   ],
   "amr": [
     "external"
+  ]
+}
+```
+
+### Dekodet payload fra access_token for klientregistrering
+
+```json
+{
+  "nbf": 1498137660,
+  "exp": 1498141260,
+  "iss": "https://helseid-sts.utvikling.nhn.no",
+  "aud": [
+    "https://helseid-sts.utvikling.nhn.no/resources",
+    "configuration_api"
+  ],
+  "client_id": "console.dcr",
+  "scope": [
+    "https://nhn.no/scopes/client/dcr"
   ]
 }
 ```
