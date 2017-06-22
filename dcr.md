@@ -32,7 +32,7 @@ API-ressurser kan være tilknyttet flere claims, som representeres i utstedte ac
     [
       "https://nhn.no/claims/identity/security_level",
       "https://nhn.no/claims/identity/pid"
-    ],
+    ]
 }
 ```
 
