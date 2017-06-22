@@ -76,7 +76,7 @@ eyJhbGciOiJSUzI1NiIsImtpZCI6IkE4RjcwQTI3QjM1MDdDMDYwREM4Qjg3MUI4REIyNEZFMzBFNTc5
 }
 ```
 
-### Dekodet payload fra access_token for klientregistrering
+### Dekodet payload fra access_token for klientregistrering:
 
 ```json
 {
