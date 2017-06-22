@@ -2,7 +2,11 @@
 
 Her gis eksempler på tokens som utstedes av FIA STS.
 
+Se [Claims](claims.md) for informasjon om claims i tokens.
+
 ## id_token
+
+Se [Terminologi](terminologi.md#identity-token) for informasjon om id_token.
 
 ### Et id_token i sin helhet med header.payload.signature:
 
@@ -37,6 +41,8 @@ eyJhbGciOiJSUzI1NiIsImtpZCI6IkE4RjcwQTI3QjM1MDdDMDYwREM4Qjg3MUI4REIyNEZFMzBFNTc5
 ```
 
 ## access_token
+
+Se [Terminologi](terminologi.md#access-token) for informasjon om access_token.
 
 ### Et self contained access_token i sin helhet med header.payload.signature:
 
