@@ -69,9 +69,9 @@ Endepunktet støtter POST, PUT og DELETE.
 Legg til et scope for en klient. Bruk følgende parametre i body.
 ```json
 {
-"external_client_id": "[client_id]",
-"scope": "[navn på scope, inkludert configuration owner prefix]",
-"api_resource_id_for_scope": "[id til api resource som har scopet som en autorization_scope]"
+  "external_client_id": "[client_id]",
+  "scope": "[navn på scope, inkludert configuration owner prefix]",
+  "api_resource_id_for_scope": "[id til api resource som har scopet som en autorization_scope]"
 }
 ```
 
