@@ -70,7 +70,7 @@ Legg til et scope for en klient. Bruk følgende parametre i body.
 ```json
 {
   "external_client_id": "[client_id]",
-  "scope": "[navn på scope, inkludert configuration owner prefix]",
+  "scope": "[navn på scope, inkludert configuration owner prefix]"
 }
 ```
 
@@ -82,7 +82,7 @@ Slett et eksternt scope.
 ```json
 {
   "external_client_id": "[client_id]",
-  "scope": "[navn på scope, inkludert configuration owner prefix]",
+  "scope": "[navn på scope, inkludert configuration owner prefix]"
 }
 ```
 
