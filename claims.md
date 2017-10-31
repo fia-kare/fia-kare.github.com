@@ -21,16 +21,16 @@
 | given_name | Ola | OIDC spec claim - fornavn |
 | family_name | Nordmann | OIDC spec claim - etternavn |
 | middle_name | Olsen | OIDC spec claim - mellomnavn |
-| `https://nhn.no/claims/client/organization_number` | 994598759 | Klientens organisasjonsnummer |
-| `https://nhn.no/claims/hpr/authorization` | | JSON-struktur iht. NHNs kodeverk |
-| `https://nhn.no/claims/hpr/hpr_number` | 181000001 | Helsepersonellnummer |
-| `https://nhn.no/claims/identity/assurance_level` | substantial | Definert av eIDAS. Mulige verdier: low, substantial eller high. Fastsatt i eller iht. identitetstilbyder. Vil antagelig erstatte security_level på sikt. |
-| `https://nhn.no/claims/identity/pid` | 04048900181 | Personidentifikator - typisk norsk fødselsnummer, men med støtte for utenlandske |
-| `https://nhn.no/claims/identity/pid_pseudonym` | /lgra0g5gOScV+lVR16XjAU076HI++GmdbUjbdFm28g= | Personidentifikator - pseudonymisert vha. HMAC |
-| `https://nhn.no/claims/identity/security_level` | 3 | Definert av "Rammeverk for autentisering og uavviselighet i elektronisk kommunikasjon med og i offentlig sektor". Mulige verdier: 2, 3 eller 4. Fastsatt i eller iht. identitetstilbyder |
+| `helseid://claims/client/organization_number` | 994598759 | Klientens organisasjonsnummer |
+| `helseid://claims/hpr/authorization` | | JSON-struktur iht. NHNs kodeverk |
+| `helseid://claims/hpr/hpr_number` | 181000001 | Helsepersonellnummer |
+| `helseid://claims/identity/assurance_level` | substantial | Definert av eIDAS. Mulige verdier: low, substantial eller high. Fastsatt i eller iht. identitetstilbyder. Vil antagelig erstatte security_level på sikt. |
+| `helseid://claims/identity/pid` | 04048900181 | Personidentifikator - typisk norsk fødselsnummer, men med støtte for utenlandske |
+| `helseid://claims/identity/pid_pseudonym` | /lgra0g5gOScV+lVR16XjAU076HI++GmdbUjbdFm28g= | Personidentifikator - pseudonymisert vha. HMAC |
+| `helseid://claims/identity/security_level` | 3 | Definert av "Rammeverk for autentisering og uavviselighet i elektronisk kommunikasjon med og i offentlig sektor". Mulige verdier: 2, 3 eller 4. Fastsatt i eller iht. identitetstilbyder |
 
 
-## `https://nhn.no/claims/hpr/authorization`
+## `helseid://claims/hpr/authorization`
 
 ```json
 {

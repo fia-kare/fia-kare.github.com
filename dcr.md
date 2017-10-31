@@ -30,8 +30,8 @@ API-ressurser kan være tilknyttet flere claims, som representeres i utstedte ac
   "name": "Min api-ressurs",
   "user_claims":
     [
-      "https://nhn.no/claims/identity/security_level",
-      "https://nhn.no/claims/identity/pid"
+      "helseid://claims/identity/security_level",
+      "helseid://claims/identity/pid"
     ]
 }
 ```

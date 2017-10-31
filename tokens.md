@@ -30,10 +30,10 @@ eyJhbGciOiJSUzI1NiIsImtpZCI6IkE4RjcwQTI3QjM1MDdDMDYwREM4Qjg3MUI4REIyNEZFMzBFNTc5
   "auth_time": 1498132935,
   "idp": "idporten-oidc",
   "locale": "nb",
-  "https://nhn.no/claims/identity/pid": "24019491117",
-  "https://nhn.no/claims/identity/security_level": "4",
-  "https://nhn.no/claims/identity/assurance_level": "high",
-  "https://nhn.no/claims/identity/pid_pseudonym": "/lgra0g5gOScV+lVR16XjAU076HI++GmdbUjbdFm28g=",
+  "helseid://claims/identity/pid": "24019491117",
+  "helseid://claims/identity/security_level": "4",
+  "helseid://claims/identity/assurance_level": "high",
+  "helseid://claims/identity/pid_pseudonym": "/lgra0g5gOScV+lVR16XjAU076HI++GmdbUjbdFm28g=",
   "amr": [
     "external"
   ]
@@ -65,10 +65,10 @@ eyJhbGciOiJSUzI1NiIsImtpZCI6IkE4RjcwQTI3QjM1MDdDMDYwREM4Qjg3MUI4REIyNEZFMzBFNTc5
   "scope": [
     "profile",
     "openid",
-    "https://nhn.no/scopes/identity/pid_pseudonym",
-    "https://nhn.no/scopes/identity/assurance_level",
-    "https://nhn.no/scopes/identity/pid",
-    "https://nhn.no/scopes/identity/security_level"
+    "helseid://scopes/identity/pid_pseudonym",
+    "helseid://scopes/identity/assurance_level",
+    "helseid://scopes/identity/pid",
+    "helseid://scopes/identity/security_level"
   ],
   "amr": [
     "external"
@@ -89,7 +89,7 @@ eyJhbGciOiJSUzI1NiIsImtpZCI6IkE4RjcwQTI3QjM1MDdDMDYwREM4Qjg3MUI4REIyNEZFMzBFNTc5
   ],
   "client_id": "console.dcr",
   "scope": [
-    "https://nhn.no/scopes/client/dcr"
+    "helseid://scopes/client/dcr"
   ]
 }
 ```
